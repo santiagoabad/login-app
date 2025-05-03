@@ -45,7 +45,7 @@ export default function RegistroForm() {
         <div className="pb-1">
           <input
             className="pl-12 mb-2 bg-gray-50 text-gray-600 border focus:border-transparent border-gray-300 sm:text-sm rounded-lg ring-3 ring-transparent focus:ring-1 focus:outline-hidden focus:ring-gray-400 block w-full p-2.5 rounded-l-lg py-3 px-4"
-            autocomplete="off"
+            autoComplete="off"
             name="nombre"
             placeholder="Nombre"
             value={form.nombre}
@@ -54,7 +54,7 @@ export default function RegistroForm() {
           />
           <input
             className="pl-12 mb-2 bg-gray-50 text-gray-600 border focus:border-transparent border-gray-300 sm:text-sm rounded-lg ring-3 ring-transparent focus:ring-1 focus:outline-hidden focus:ring-gray-400 block w-full p-2.5 rounded-l-lg py-3 px-4"
-            autocomplete="off"
+            autoComplete="off"
             name="email"
             placeholder="Email"
             value={form.email}
@@ -63,7 +63,7 @@ export default function RegistroForm() {
           />
           <input
             className="pl-12 mb-2 bg-gray-50 text-gray-600 border focus:border-transparent border-gray-300 sm:text-sm rounded-lg ring-3 ring-transparent focus:ring-1 focus:outline-hidden focus:ring-gray-400 block w-full p-2.5 rounded-l-lg py-3 px-4"
-            autocomplete="off"
+            autoComplete="off"
             name="password"
             type="password"
             placeholder="Contraseña"
