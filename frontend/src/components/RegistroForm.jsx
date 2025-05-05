@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 
 export default function RegistroForm() {
   const [form, setForm] = useState({
@@ -8,6 +9,8 @@ export default function RegistroForm() {
     email: "",
     password: "",
   });
+
+  const router = useRouter();
 
   const [mensaje, setMensaje] = useState("");
 
@@ -76,6 +79,15 @@ export default function RegistroForm() {
           </button>
         </div>
       </form>
+      <p className="mt-4 text-sm text-center">
+        ¿Ya tenés cuenta?{" "}
+        <button
+          onClick={() => router.push("/")}
+          className="text-indigo-600 underline hover:text-indigo-800"
+        >
+          Iniciá sesión acá
+        </button>
+      </p>
       {mensaje && <p>{mensaje}</p>}
     </div>
   );
