@@ -24,6 +24,7 @@ export default function HomePage() {
     const data = await res.json();
 
     if (res.ok) {
+      // localStorage.setItem("token", data.token);
       setMensaje("Login exitoso ✅");
       router.push("/dashboard");
     } else {
